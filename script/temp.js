@@ -1292,7 +1292,7 @@ var game = {
 			game.update();
 			game.draw();
 		}
-		requestAnimationFrame(game.run);
+		setTimeout(function () { requestAnimationFrame(game.run); }, 1000 / game.FPS);
 		/*setInterval(function () {
 			if (game.isRunning) {
 				game.update();
